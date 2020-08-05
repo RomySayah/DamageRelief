@@ -3,7 +3,7 @@ html {
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-    padding:30px;
+    padding:20px;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
@@ -31,32 +31,27 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 
-{
-        box-sizing: border-box;
-    }
+* {
+  box-sizing: border-box;
+}
     /* Set additional styling options for the columns*/
-    .column {
-    float: left;
-    width: 50%;
-    }
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
 
-.left {
-    width: 40%;
-    }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-.right {
-    width: 60%;
-    }
 
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-
-@media (max-width: 700px) {
-  .left,
-  .right {
+@media screen and (max-width: 700px) {
+  .column {
     width: 100%;
   }
 }
+
