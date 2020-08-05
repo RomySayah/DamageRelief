@@ -41,11 +41,11 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
     }
 
 .left {
-    width: 30%;
+    width: 40%;
     }
 
 .right {
-    width: 70%;
+    width: 50%;
     }
 
     .row:after {
